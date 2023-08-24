@@ -1,0 +1,43 @@
+body{
+  display:flex;
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  background: linear-gradient(rgb(1, 1, 18),rgb(191, 226, 233),rgb(45, 122, 210),white,rgb(0, 0, 2),rgb(11, 252, 224));
+}
+.card{
+  border:2px solid black;
+
+  display: flex;
+}
+.board{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
+  gap:20px;
+}
+image{
+  flex:1;
+  
+}
+.Header{
+  padding:10px;
+  text-align: center;
+  color:rgb(214, 206, 206);
+}
+h1{
+  margin:0;
+  padding:0;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.score{
+  display:flex;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:30px;
+  padding-right: 30px;
+  color:white;
+}
