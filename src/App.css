@@ -5,16 +5,23 @@ body{
   padding:0;
   min-height: 100vh;
   background: linear-gradient(rgb(1, 1, 18),rgb(191, 226, 233),rgb(45, 122, 210),white,rgb(0, 0, 2),rgb(11, 252, 224));
+  overflow: hidden;
 }
 .card{
   border:2px solid black;
-
+  box-shadow: 2px 2px 3px 5px rgb(0,0,0,0.4);
   display: flex;
+}
+.card:active{
+  height:300px;
+  width:200px;
+  border:none;
+  box-shadow: none;
 }
 .board{
   display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
-  gap:20px;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
 }
 image{
   flex:1;
@@ -40,4 +47,5 @@ h1{
   font-size:30px;
   padding-right: 30px;
   color:white;
+  padding-bottom: 10px;
 }

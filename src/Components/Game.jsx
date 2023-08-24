@@ -53,7 +53,7 @@ const Game = () => {
         setCards(newcards);
         const allPicked = updatedCards.every(card => card.picked);
         if (allPicked) {
-          //display winner
+          window.location.reload();
         }
         setScore(score + 1);
         if(score+1>bestScore) 
@@ -64,7 +64,7 @@ const Game = () => {
         }
         // shuffleCards();
       }else{
-        //looser
+        setScore(0);
       }
     };
     function shuffleArray(array) {
